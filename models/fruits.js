@@ -20,7 +20,7 @@ const fruits = [
     },
 
     {
-        name:'Nintendo',
+        name:'Nintendo Switch Joy-Con',
         color: 'orange',
         readyToEat: false
     }
