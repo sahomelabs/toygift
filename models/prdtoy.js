@@ -40,5 +40,5 @@ const fruits = [
     
 ];
 
-module.exports= fruits
+module.exports= prdtoy
  

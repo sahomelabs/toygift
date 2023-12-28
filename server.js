@@ -2,7 +2,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const froots = require('./models/prdtoy')
+const prdtoylist = require('./models/prdtoy')
 const Fruit = require('./models/fruit')
 // const mongoose = require('mongoose');
 
@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
 
 app.get('/fruits', (req,res)=>{
     res.render('Index', {
-        fruits: froots
+        fruits: prdtoylist
     })
 })
 // ----------------------------------[Index (R)]
@@ -62,7 +62,7 @@ app.post('/fruits',(req,res)=>{
     } else { 
         req.body.readyToEat = false; 
     }
-    froots.push(req.body)
+    prdtoylist.push(req.body)
     // ---> Add New Fruit to Existing DataSet
     console.log(req.body)
     res.redirect('/fruits')
@@ -72,7 +72,7 @@ app.post('/fruits',(req,res)=>{
 
 app.get('/fruits/:indexOfFruitsArray', (req,res)=>{
     res.render('Show',{
-        fruit: froots[req.params.indexOfFruitsArray]
+        fruit: prdtoylist[req.params.indexOfFruitsArray]
     })
 })
 // ----------------------------------[Show]
