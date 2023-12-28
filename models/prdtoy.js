@@ -3,19 +3,19 @@ const app = express();
 
 const prdtoy = [
     {
-        name:'apple',
+        name:'Tobbi Licensed Mercedes Benz AMG Electric Kids Ride On Car, Battery Powered Ride On Toy for Toddlers with Parental Remote, White',
         color: 'red',
         readyToEat: true
     },
     {
-        name:'pear',
+        name:'Sony PlayStation 5 Slim Disc Console with Spiderman 2',
         color: 'green',
         readyToEat: false
     },
 
     {
-        name:'banana',
-        color: 'yellow',
+        name:'Americas Toys Project Ride On Toy Motorcycle With Upgraded Dashboard',
+        color: 'Black',
         readyToEat: true
     },
 
