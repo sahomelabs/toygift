@@ -23,7 +23,14 @@ const fruits = [
         name:'Nintendo Switch Joy-Con',
         color: 'orange',
         readyToEat: false
+    },
+
+    {
+        name:'Street Fighter Turbo Champion Legacy',
+        color: 'orange',
+        description: 'Logitech G29 Driving Force Steering Wheel for PS5 | PS4 | PS3 | PC'
     }
+    
 ];
 
 module.exports= fruits
