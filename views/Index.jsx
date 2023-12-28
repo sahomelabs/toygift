@@ -3,7 +3,7 @@ function Index(props) {
   return (
     <>
      <nav>
-        <a href="/fruits/new"><h1>Create a New Fruit</h1></a>
+        <a href="/fruits/new"><h1>Suggest Gift Toy</h1></a>
       </nav>
       <ul>
         <h1>
