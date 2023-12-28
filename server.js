@@ -13,6 +13,10 @@ app.set("view engine","jsx")
 app.engine("jsx", require("express-react-views").createEngine())
 // --> Initializes ViewEngine
 
+// Serve static files, including CSS
+app.use(express.static(path.join(__dirname, 'views')));
+
+
 // Define a route to render the landing page
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
@@ -25,6 +29,11 @@ app.use((req, res, next) => {
     console.log('I run for all routes');
     next();
 });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+});
+
 // --> Intercept reqRes proccess and manage dataFlow
 
 // mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
