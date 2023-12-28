@@ -2,7 +2,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const froots = require('./models/fruits')
+const froots = require('./models/prdtoy')
 const Fruit = require('./models/fruit')
 // const mongoose = require('mongoose');
 
