@@ -3,7 +3,7 @@ import React from "react";
 function New() {
   return (
     <>
-      <h1>Create A New Fruit</h1>
+      <h1>Create A New Toy</h1>
       <form action="/fruits" method="POST"><br/>
         Name: <input style={{margin:"1em"}} type="text" name="name" /><br/>
         Color: <input  style={{margin:"1em"}}type="text" name="color" /><br/>
