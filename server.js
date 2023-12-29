@@ -41,19 +41,19 @@ app.use((req, res, next) => {
 // ---------------------------------[Middleware]
 
 
-app.get('/fruits', (req,res)=>{
+app.get('/toys', (req,res)=>{
     res.render('Index', {
-        fruits: prdtoylist
+        toys: prdtoylist
     })
 })
 // ----------------------------------[Index (R)]
 
-app.get('/fruits/new',(req,res)=>{
+app.get('/toys/new',(req,res)=>{
     res.render('New')
 })
 // --------------------------------------[New]
 
-app.post('/fruits',(req,res)=>{
+app.post('/toys',(req,res)=>{
     if(req.body.readyToEat === 'on'){ 
         req.body.readyToEat = true; 
     } else { 
@@ -62,14 +62,14 @@ app.post('/fruits',(req,res)=>{
     prdtoylist.push(req.body)
     // ---> Add New Fruit to Existing DataSet
     console.log(req.body)
-    res.redirect('/fruits')
+    res.redirect('/toys')
 })
 // ----------------------------------[POST (C)]
 
 
-app.get('/fruits/:indexOfFruitsArray', (req,res)=>{
+app.get('/toys/:indexOfToysArray', (req,res)=>{
     res.render('Show',{
-        fruit: prdtoylist[req.params.indexOfFruitsArray]
+        fruit: prdtoylist[req.params.indexOfToysArray]
     })
 })
 // ----------------------------------[Show]

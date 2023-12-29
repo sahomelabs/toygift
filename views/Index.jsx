@@ -3,12 +3,12 @@ function Index(props) {
   return (
     <>
      <nav>
-        <a href="/fruits/new"><h1>Suggest Gift Toy</h1></a>
+        <a href="/toys/new"><h1>Suggest Gift Toy</h1></a>
       </nav>
       <ul>
         <h1>
           {" "}
-          {props.fruits.map((fruit, i) => {
+          {props.toys.map((toy, i) => {
             return (
               <li
                 style={{
@@ -19,7 +19,7 @@ function Index(props) {
                 }}
               >
                 {" "}
-                <a href={`/fruits/${i}`}>{fruit.name} </a>{" "}
+                <a href={`/toys/${i}`}>{toy.name} </a>{" "}
               </li>
             );
           })}
