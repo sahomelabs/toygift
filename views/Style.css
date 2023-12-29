@@ -31,6 +31,17 @@ nav a {
     font-weight: bold;
 }
  
+section{
+    text-align: center;
+}
+
+/* h1 css */
+h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-align: center;
+}
 
 /* Footer css */
 
