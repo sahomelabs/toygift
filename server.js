@@ -30,9 +30,6 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
-});
 
 // --> Intercept reqRes proccess and manage dataFlow
 
