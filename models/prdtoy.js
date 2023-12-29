@@ -16,7 +16,7 @@ const prdtoy = [
     {
         name:'Americas Toys Project Ride On Toy Motorcycle With Upgraded Dashboard',
         color: 'Black',
-        addToGiftBucketList: true
+        addToGiftBucketList: false
     },
 
     {
