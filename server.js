@@ -3,7 +3,7 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const prdtoylist = require('./models/prdtoy')
-const Fruit = require('./models/fruit')
+const Toy = require('./models/toy')
 // const mongoose = require('mongoose');
 
 
@@ -69,7 +69,7 @@ app.post('/toys',(req,res)=>{
 
 app.get('/toys/:indexOfToysArray', (req,res)=>{
     res.render('Show',{
-        fruit: prdtoylist[req.params.indexOfToysArray]
+        toy: prdtoylist[req.params.indexOfToysArray]
     })
 })
 // ----------------------------------[Show]
